@@ -2,7 +2,7 @@ import cv2
 import torch
 import random
 
-from utils import get_label_file, encode_label
+from datas.data_utils import get_label_file, encode_label
 
 
 class TrainValDataset(torch.utils.data.Dataset):

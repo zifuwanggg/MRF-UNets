@@ -57,7 +57,7 @@ def get_args():
 def main(args):
     device = torch.device('cuda')
     torch.backends.cudnn.benchmark = True
-    
+
     train_loader, test_loader = get_dataloader(args)
 
     choices = np.array([int(c) for c in args.choices.split(',')])

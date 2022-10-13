@@ -1,7 +1,7 @@
 # MRF-UNets: Searching UNet with Markov Random Fields
 
-## Prerequisite
-### Dependency
+## Prerequisites
+### Dependencies
 * The scripts depend on the following packages
 
 ```
@@ -17,22 +17,22 @@ pydicom
 SimpleITK 
 ```
 
-* Some packages are difficult to install and they are only used in data preprocessing, e.g. `osgeo`. You do not have to install all packages if you are not interested in some datasets. Please refer to `datas/preprocess.py` and comment out the related code lines.
+* Some packages are difficult to install and they are only used in data preprocessing, e.g. `osgeo`. You do not have to install all packages if you are not interested in some datasets. Please refer to `preprocess.py` and comment out the related code lines.
 
 ### Data Preparation
 * Preprocess a dataset
 
 ```Shell
-python datas/preprocess.py func data_dir
+python preprocess.py func data_dir
 ```
 
 For example
 
 ```Shell
-python datas/preprocess.py Land "/Users/whoami/datasets"
+python preprocess.py Land "/Users/whoami/datasets"
 ```
 
-* The data hierachy before and after the preprocessing should be as follows. Please refer to `datas/preprocess.py` for more details.
+* The data hierachy before and after the preprocessing should be as follows. Please refer to `preprocess.py` for more details.
 
 ```
 data_dir

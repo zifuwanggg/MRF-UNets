@@ -1,7 +1,7 @@
 import cv2
 import torch
 
-from utils import get_label_file, encode_label
+from datas.data_utils import get_label_file, encode_label
 
 
 class Dataset(torch.utils.data.Dataset):

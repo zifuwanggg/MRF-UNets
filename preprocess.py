@@ -8,7 +8,7 @@ from osgeo import gdal, ogr # only required for DeepGlobe Building
 import pydicom # only required for CHAOS
 import SimpleITK as sitk # only required for PROMISE
 
-from data_utils import expand_image_list, get_label_file
+from datas.data_utils import expand_image_list, get_label_file
 
 
 # https://gist.github.com/avanetten/b295e89f6fa9654c9e9e480bdb2e4d60#file-create_building_mask-py

@@ -45,7 +45,7 @@ def get_args():
 def main(args):
     device = torch.device('cuda')
     torch.backends.cudnn.benchmark = True
-    
+
     train_val_loader, _ = get_dataloader(args)
 
     model = MRFSuperNet(image_channels=args.image_channels, num_classes=args.num_classes, channel_step=args.channel_step).to(device)
